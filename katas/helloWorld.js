@@ -2,7 +2,10 @@ const Test = require('../Test');
 
 function hello(name) {
 
-    return ('Hello, ' + name.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}) + '!');
+    if (!name){
+        return 'Hello, World!'
+    }
+    else { return 'Hello, ' + name.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}) + '!'}
 
 }
 
