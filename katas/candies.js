@@ -1,6 +1,5 @@
 const Test = require('../Test');
 
-
 function distribute(m, n) {
 
     var candy = m;
